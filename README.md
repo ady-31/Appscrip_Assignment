@@ -99,6 +99,7 @@ docker run --name trade-intel-redis -p 6379:6379 -d redis:7
 ## Render Deploy Note
 
 This repository includes `runtime.txt` pinned to Python 3.11.9 to ensure binary wheel compatibility for `pydantic-core` and avoid Rust source builds on restricted build environments.
+If your Render service still shows Python 3.14 in logs, set environment variable `PYTHON_VERSION=3.11.9` and redeploy with cleared build cache.
 
 ## Test
 
